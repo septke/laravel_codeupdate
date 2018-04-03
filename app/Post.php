@@ -4,6 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Post
+ *
+ * @property-read \App\Category $category
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
+ * @property-read \App\Photo $photo
+ * @property-read \App\User $user
+ * @mixin \Eloquent
+ */
 class Post extends Model
 {
     //

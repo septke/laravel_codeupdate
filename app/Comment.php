@@ -4,6 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Comment
+ *
+ * @property-read \App\Post $post
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\CommentReply[] $replies
+ * @mixin \Eloquent
+ */
 class Comment extends Model
 {
     //

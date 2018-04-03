@@ -4,6 +4,14 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * App\User
+ *
+ * @property-read \App\Photo $photo
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
+ * @property-read \App\Role $role
+ * @mixin \Eloquent
+ */
 class User extends Authenticatable
 {
     /**
